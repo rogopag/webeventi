@@ -28,11 +28,34 @@ Tags: one-column, black, white, fixed-width
 }
 
 body {
-	font-family: Georgia;
-	font-style: italic;
-	text-transform: lowercase;
-	font-size: 14px;
-	background: #23211E url("images/bg.gif");
+	margin:0px;
+	padding:0px;
+	font-family: Trebuche MS, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	/*height: 100%;*/
+	border:none;
+	height: 100%;
+	width: 100%;
+	background-color:#FFFFFF;
+}
+img {
+	border:none;
+}	
+p {
+	margin:0px
+}
+a {text-decoration:none;}
+a:link {color: #262261}     /* unvisited link */
+a:visited {color: #262261}  /* visited link */
+a:hover {color: #262261}   /* mouse over link */
+html {
+	height: 100%;
+	width: 100%;
+}
+a:active {color: #262261}   /* selected link */
+.CLEAR {
+	clear:both;
 }
 
 #wrap {
@@ -41,11 +64,25 @@ body {
 }
 
 #header {
-	background: transparent;
-	width: 100%;
-	padding: 10px 20px;
+	width: 960px;
+	color: #9BC408;
+	padding-top:20px;
+    margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	height:200px;
 }
-
+.header_contenitore_left {
+	float:left;
+	width: 300px;
+	background:url(img/logo_webeventi.png) no-repeat left top;
+}
+.header_contenitore_right {
+	float:right;
+	text-align:right;
+	width: 660px;
+}
 #header a {
 	color: #757575;
 	text-decoration: none;
@@ -265,10 +302,6 @@ body {
 	font-family: Georgia;
 	font-style: italic;
 	text-transform: lowercase;
-}
-
-a img {
-	border: 0px none;
 }
 
 blockquote {

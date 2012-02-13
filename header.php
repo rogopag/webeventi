@@ -28,9 +28,13 @@
 <body>
 <div id="wrap">
 <div id="header">
+	
+	<div class="header_contenitore_left">
 	<h1><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
 	<p><small><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('description'); ?></a></small></p>
+	</div>
 	<div style="clear: right;"></div>
+	
 </div>
 
 <ul id="navigation">
