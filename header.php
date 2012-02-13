@@ -33,19 +33,18 @@
 	<h1><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
 	<p><small><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('description'); ?></a></small></p>
 	</div>
-	<div style="clear: right;"></div>
+	<ul id="navigation">
+		<?php wp_list_pages('title_li=');
+
+		if (is_active_widget("sidebarssuck_widget_search")) {
+			sidebarssuck_widget_search();
+		}
+		?>	
+	</ul>
 	
 </div>
 
-<ul id="navigation">
-	<li class="<?php if (!is_page()) echo "current_page_item" ?>"><a href="<?php bloginfo('url'); ?>">Blog</a></li>
-	<?php wp_list_pages('title_li=');
-	
-	if (is_active_widget("sidebarssuck_widget_search")) {
-		sidebarssuck_widget_search();
-	}
-	?>	
-</ul>
+
 
 <div id="content">
 <!-- end header -->

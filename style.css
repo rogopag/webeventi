@@ -8,6 +8,11 @@ Author URI: http://lifecheater.ich-geek.de/
 Tags: one-column, black, white, fixed-width
 */
 
+@import url('http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css');
+@font-face{font-family: HelveticaNeue;src: url(fonts/Helvetica_Neue.otf);}
+@font-face{font-family: HelveticaNeueBold;src: url(fonts/Helvetica_Neue_Bold.otf);}
+@font-face{font-family: HelveticaNeueMedium;src: url(fonts/Helvetica_Neue_Medium.otf);}
+
 * {
 	padding: 0px;
 	margin: 0px;
@@ -59,7 +64,7 @@ a:active {color: #262261}   /* selected link */
 }
 
 #wrap {
-	width: 800px;
+	width: 960px;
 	margin: 0px auto;
 }
 
@@ -71,11 +76,12 @@ a:active {color: #262261}   /* selected link */
 	margin-right: auto;
 	margin-bottom: 0px;
 	margin-left: auto;
-	height:200px;
+	height:80px;
 }
 .header_contenitore_left {
-	float:left;
 	width: 300px;
+	height:80px;
+	float:left;
 	background:url(img/logo_webeventi.png) no-repeat left top;
 }
 .header_contenitore_right {
@@ -92,11 +98,13 @@ a:active {color: #262261}   /* selected link */
 	font-size: 39px;
 	line-height: 39px;
 	font-weight: normal;
+	visibility:hidden;;
 }
 
 #header small {
 	font-size: 19px;
 	line-height: 19px;
+	display:none;
 }
 
 #s {
@@ -121,35 +129,47 @@ a:active {color: #262261}   /* selected link */
 #navigation {
 	height: 40px;
 	list-style-type: none;
-	background: #0F0E0E;
+	background: transparent;
 	padding: 5px 20px 0px;
-	border: 5px solid #0F0E0E;
-	border-bottom: 0px none;
 	margin: 0px;
 }
 
 #navigation li {
 	float: left;
-	height: 16px;
-	margin: 4px 15px 0px;
+	margin: 4px 16px 0px 0px;
+	font-family:HelveticaNeueBold;
+	font-size:12px;
+	text-align:center;
 }
 
 #navigation li a {
 	text-decoration: none;
-	font-size: 1.5em;
-	color: #3F3F3F;
+	font-size: 1.3em;
+	color: #9BC408;
+	min-width:82px;
+	height:25px;
+	padding:4px;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari, Chrome */
+	border-radius: 4px; /* CSS3 */
+	behavior:url(js/radius/border-radius.htc);
 }
 
 #navigation .current_page_item a {
-	color: #5A859F;
+	/*this can be changed to tell wp to color differently the link of current page*/
+	color: #9BC408;
 }
 
+#navigation li:hover{}
+
 #navigation li a:hover {
-	color: #5F5F5F;
+	color: #ffffff;
+	background:#A3A5A6;
 }
 
 #navigation .current_page_item a:hover {
-	color: #5A859F;
+		/*this can be changed to tell wp to color differently the link of current page*/
+	color: #ffffff;
 }
 
 #content {
