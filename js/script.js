@@ -5,7 +5,7 @@ jq(document).ready(function()
 		scrollAndDisplayLightbox();
 		doScroll();
 	}
-	jq('#navigation li a').corner('round 4px')
+	jq('#navigation li a').corner('round 4px');
 });
 
 var scrollAndDisplayLightbox = function(){
