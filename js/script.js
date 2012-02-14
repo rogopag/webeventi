@@ -7,6 +7,7 @@ jq(document).ready(function()
 		doScroll();
 	}
 	jq('#navigation li a').corner('round 4px');
+	jq('li.page_item a').css('background', '#000000');
 });
 
 var scrollAndDisplayLightbox = function(){
