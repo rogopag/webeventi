@@ -1,13 +1,15 @@
-$(document).ready(function(){
-	$.swapImage(".swapImage");
-	if($("#viewer").is('div')){
+var jq = jQuery;
+jq(document).ready(function()
+{
+	if(jq("#viewer").is('div')){
 		scrollAndDisplayLightbox();
 		doScroll();
 	}
+	jq('#navigation li a').corner('round 4px')
 });
 
 var scrollAndDisplayLightbox = function(){
-	$("a.lightboxA").lightBox({
+	jq("a.lightboxA").lightBox({
 		overlayBgColor: '#000',
 		overlayOpacity: 0.6,
 		containerResizeSpeed: 350,
@@ -16,9 +18,5 @@ var scrollAndDisplayLightbox = function(){
 	});
 };
 var doScroll = function(){
-	$('.viewerFrame').galleryScroll();
+	jq('.viewerFrame').galleryScroll();
 };
-
-
-//$('.NOMECLASSE').funzione();
-//$('#NOMEID').funzione();
