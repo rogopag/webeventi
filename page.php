@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <div id="content-dynamic">
-	FOOOOOOOOOBAAAAAAAR
+	FOOOOOOOOOBAAAAAAAR RICCARDO
 </div>
 
 
