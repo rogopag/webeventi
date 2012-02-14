@@ -26,7 +26,9 @@ var doScroll = function(){
 };
 function doCornersForIEShit()
 {
-	jq('li.page_item a').bind('mouseover', function(event){
-		jq(this).corner('round 4px');
+	jq('li.page_item a').mouseenter(function(){
+		jq(this).corner();
+	}).mouseleave(function(){
+		jq(this).uncorner();
 	});	
 };
