@@ -27,6 +27,7 @@ var doScroll = function(){
 function doCornersForIEShit()
 {
 	jq('li.page_item a').mouseenter(function(){
+		jq(this).css('padding', '0px')
 		jq(this).corner();
 	}).mouseleave(function(){
 		jq(this).uncorner();
