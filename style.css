@@ -147,6 +147,7 @@ background:url(img/pattern.jpg) repeat #fff;}
 }
 
 #navigation li a {
+	position: relative;
 	text-decoration: none;
 	font-size: 1.3em;
 	color: #9BC408;
