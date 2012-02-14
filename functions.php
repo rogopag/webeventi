@@ -32,4 +32,10 @@ function hide_widgets() {
 }  
 add_action('widgets_init','hide_widgets');
 
+function enqueue_handler()
+{
+	 wp_enqueue_script('scripts', get_bloginfo('template_url').'/js/jquery.corner.js', array('jquery'), '0.1', false);
+	 wp_enqueue_script('scripts', get_bloginfo('template_url').'/js/script.js', array('jquery'), '0.1', false); 
+}
+add_action('wp_print_scripts', 'enqueue_handler');
 ?>

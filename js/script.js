@@ -1,6 +1,7 @@
 var jq = jQuery;
 jq(document).ready(function()
 {
+	alert('foo')
 	if(jq("#viewer").is('div')){
 		scrollAndDisplayLightbox();
 		doScroll();
