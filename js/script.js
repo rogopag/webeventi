@@ -7,8 +7,7 @@ jq(document).ready(function()
 	}
 	if( !jq.support.leadingWhitespace )
 	{
-		alert('broser not corner');
-		jq('li.page_item a').corner('round 4px');
+		doCornersForIEShit();
 	}
 	
 });
@@ -24,4 +23,10 @@ var scrollAndDisplayLightbox = function(){
 };
 var doScroll = function(){
 	jq('.viewerFrame').galleryScroll();
+};
+function doCornersForIEShit()
+{
+	jq('li.page_item a').bind('mouseover', function(event){
+		jq(this).corner('round 4px');
+	});	
 };
