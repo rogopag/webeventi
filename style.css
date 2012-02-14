@@ -35,7 +35,7 @@ Tags: one-column, black, white, fixed-width
 body {
 	margin:0px;
 	padding:0px;
-	font-family: HelveticaNeue, Arial, Helvetica, sans-sans-serif;
+	font-family: HelveticaNeue, Helvetica,  Arial, sans-sans-serif;
 	font-size: 12px;
 	color: #FFFFFF;
 	/*height: 100%;*/
@@ -120,7 +120,7 @@ background:url(img/pattern.jpg) repeat #fff;}
 	color: #444;
 	margin-top: 5px;
 	font-size: 15px;
-	font-family: HelveticaNeue;
+	font-family: HelveticaNeue, Helvetica, sans-serif;
 	font-style: italic;
 }
 
@@ -140,9 +140,10 @@ background:url(img/pattern.jpg) repeat #fff;}
 #navigation li {
 	float: left;
 	margin: 4px 16px 0px 0px;
-	font-family:HelveticaNeueBold;
+	font-family:HelveticaNeueBold, Helvetica, sans-serif;
 	font-size:12px;
 	text-align:center;
+	font-weight:bold;
 }
 
 #navigation li a {
@@ -155,7 +156,7 @@ background:url(img/pattern.jpg) repeat #fff;}
 	-moz-border-radius: 4px; /* Firefox */
 	-webkit-border-radius: 4px; /* Safari, Chrome */
 	border-radius: 4px; /* CSS3 */
-	behavior:url(js/radius/border-radius.htc);
+	behavior:url('js/radius/border-radius.htc');
 }
 
 #navigation .current_page_item a {
@@ -246,7 +247,7 @@ background:url(img/pattern.jpg) repeat #fff;}
 }
 
 #content .post .contentinner .storycontent {
-	font-family: HelveticaNeue, Arial,  sans-serif;
+	font-family: HelveticaNeue, Helvetica, Arial,  sans-serif;
 	font-size: 12px;
 	font-style: normal;
 	text-transform: none;
@@ -280,7 +281,7 @@ background:url(img/pattern.jpg) repeat #fff;}
 }
 
 #content #commentlist li .comment-content {
-	font-family: HelveticaNeue, Arial,  sans-serif;
+	font-family: HelveticaNeue, Helvetica, Arial,  sans-serif;
 	font-size: 14px;
 	display: block;
 	width: 425px;
@@ -292,7 +293,7 @@ background:url(img/pattern.jpg) repeat #fff;}
 }
 
 #content #commentform #comment {
-	font-family: HelveticaNeue, Arial,  sans-serif;
+	font-family: HelveticaNeue, Helvetica, Arial,  sans-serif;
 	font-size: 14px;
 	font-style: normal;
 	text-transform: none;
