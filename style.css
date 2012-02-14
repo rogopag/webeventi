@@ -154,9 +154,8 @@ background:url(img/pattern.jpg) repeat #fff;}
 	min-width:82px;
 	height:25px;
 	padding:4px;
-/*	-moz-border-radius: 4px; /* Firefox */
-/*	-webkit-border-radius: 4px; /* Safari, Chrome */
-/*	behavior:url('js/radius/border-radius.htc');
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius: 4px; /* Safari, Chrome */
 	border-radius: 4px; /* CSS3 */
 }
 

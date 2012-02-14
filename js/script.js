@@ -5,7 +5,12 @@ jq(document).ready(function()
 		scrollAndDisplayLightbox();
 		doScroll();
 	}
-	jq('li.page_item a').corner('round 4px');
+	if( !jq.support.leadingWhitespace )
+	{
+		alert('broser not corner');
+		jq('li.page_item a').corner('round 4px');
+	}
+	
 });
 
 var scrollAndDisplayLightbox = function(){
