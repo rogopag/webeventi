@@ -26,6 +26,7 @@ var doScroll = function(){
 };
 function doCornersForIEShit()
 {
+	jq('li.page_item a').corner();
 	jq('li.page_item a').mouseenter(function(){
 		jq(this).corner().parent().css('padding', '0px');
 	}).mouseleave(function(){
