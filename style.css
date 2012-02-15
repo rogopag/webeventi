@@ -9,9 +9,8 @@ Tags: one-column, black, white, fixed-width
 */
 
 @import url('http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css');
-@font-face{font-family: HelveticaNeue;src: url('fonts/Helvetica_Neue.otf') format('OpenType');}
-@font-face{font-family: HelveticaNeueBold;src: url('fonts/Helvetica_Neue_Bold.otf') format('OpenType');}
-@font-face{font-family: HelveticaNeueMedium;src: url('fonts/Helvetica_Neue_Medium.otf') format('OpenType');}
+@font-face{font-family: HelveticaNeue;src: url('HelveticaNeue().eot');}
+@font-face{font-family: HelveticaNeueBold;src: url('fonts/helvetica_medium/HelveticaNeue().eot');}
 
 * {
 	padding: 0px;
