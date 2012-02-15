@@ -6,7 +6,7 @@ jq(document).ready(function()
 		scrollAndDisplayLightbox();
 		doScroll();
 	}
-	jq('li.page_item a').corner();	
+	jq('li.page_item a').corner("6px round");	
 });
 
 var scrollAndDisplayLightbox = function(){
