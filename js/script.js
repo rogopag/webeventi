@@ -1,16 +1,12 @@
 var jq = jQuery;
+
 jq(document).ready(function()
 {
 	if(jq("#viewer").is('div')){
 		scrollAndDisplayLightbox();
 		doScroll();
 	}
-	jq('li.page_item a').corner();
-	if( !jq.support.leadingWhitespace )
-	{
-		doCornersForIEShit();
-	}
-	
+	jq('li.page_item a').corner();	
 });
 
 var scrollAndDisplayLightbox = function(){
@@ -24,13 +20,4 @@ var scrollAndDisplayLightbox = function(){
 };
 var doScroll = function(){
 	jq('.viewerFrame').galleryScroll();
-};
-function doCornersForIEShit()
-{
-	
-	jq('li.page_item a').mouseenter(function(){
-		jq(this).corner().parent().css('padding', '0px');
-	}).mouseleave(function(){
-		jq(this).uncorner();
-	});	
 };
