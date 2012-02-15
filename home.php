@@ -12,6 +12,7 @@ get_header();
 </div><!-- WRAP -->
 </div><!-- CONTAINER -->
 
+<div id="content-wrapper">
 <div id="content">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -56,4 +57,5 @@ get_header();
 		<div class="alignleft"><?php posts_nav_link('',__('&laquo; Newer Posts'),'') ?></div>
 		<div class="alignright"><?php posts_nav_link('','',__('Older Posts &raquo;')) ?></div>
 		</div><!-- CONTENT -->
+		</div><!-- CONTENT WRAPPER-->
 		<?php get_footer(); ?>
