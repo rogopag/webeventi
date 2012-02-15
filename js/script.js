@@ -1,4 +1,4 @@
-var jq = jQuery;
+var jq = jQuery, Webeventi;
 
 jq(document).ready(function()
 {
@@ -6,7 +6,11 @@ jq(document).ready(function()
 		scrollAndDisplayLightbox();
 		doScroll();
 	}
-	jq('li.page_item a').corner("6px round");	
+	jq('li.page_item a').corner("6px round");
+	
+	jq('div.header_contenitore_left').click(function(){
+		window.location = Webeventi.site_url;
+	});	
 });
 
 var scrollAndDisplayLightbox = function(){

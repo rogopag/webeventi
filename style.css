@@ -87,6 +87,7 @@ background:#9BC408;overflow:auto;clear:both;}
 	height:80px;
 	float:left;
 	background:url(img/logo_webeventi.png) no-repeat left top;
+	cursor:pointer;
 }
 .header_contenitore_right {
 	float:right;
@@ -94,7 +95,7 @@ background:#9BC408;overflow:auto;clear:both;}
 	width: 660px;
 }
 #header a {
-	color: #757575;
+	color: white;
 	text-decoration: none;
 }
 
@@ -102,7 +103,7 @@ background:#9BC408;overflow:auto;clear:both;}
 	font-size: 39px;
 	line-height: 39px;
 	font-weight: normal;
-	visibility:hidden;;
+	visibility:hidden;
 }
 
 #header small {
