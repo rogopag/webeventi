@@ -2,8 +2,8 @@ var jq = jQuery, Webeventi;
 
 jq(document).ready(function()
 {
-	if(jq("#viewer").is('div')){
-		scrollAndDisplayLightbox();
+	if(jq(".gallery").is('div')){
+	//	scrollAndDisplayLightbox();
 		doScroll();
 	}
 	jq('li.page_item a').corner("6px round");
@@ -23,5 +23,6 @@ var scrollAndDisplayLightbox = function(){
 	});
 };
 var doScroll = function(){
-	jq('.viewerFrame').galleryScroll();
+	console.log('fooo')
+	jq('.gallery').galleryScroll();
 };

@@ -9,7 +9,7 @@ usage:
 (function( $ ){
 	$.fn.galleryScroll = function() {
 		var thumbsNum = this.children().length, imgCont = this.children().eq(0), imgContWidth = imgCont.width() + 18, scrollerButtons = '<div id="previous-button" class="gallery-buttons"></div><div id="next-button" class="gallery-buttons"></div>', el = this, count = 4, control;
-		//this.parent().append(scrollerButtons);
+		this.append(scrollerButtons);
 		
 		var previous = function()
 		{
