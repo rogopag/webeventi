@@ -3,7 +3,7 @@ var jq = jQuery, Webeventi;
 jq(document).ready(function()
 {
 	if(jq(".gallery").is('div')){
-	//	scrollAndDisplayLightbox();
+		scrollAndDisplayLightbox();
 		doScroll();
 	}
 	jq('li.page_item a').corner("6px round");
@@ -14,7 +14,7 @@ jq(document).ready(function()
 });
 
 var scrollAndDisplayLightbox = function(){
-	jq("a.lightboxA").lightBox({
+	jq("dt.gallery-icon a").lightBox({
 		overlayBgColor: '#000',
 		overlayOpacity: 0.6,
 		containerResizeSpeed: 350,
@@ -23,6 +23,5 @@ var scrollAndDisplayLightbox = function(){
 	});
 };
 var doScroll = function(){
-	console.log('fooo')
 	jq('.gallery').galleryScroll();
 };
