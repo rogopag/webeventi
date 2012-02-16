@@ -6,7 +6,9 @@ get_header();
 ?>
 
 <div id="content-dynamic">
-
+	<?php 
+	if(  has_post_thumbnail() ) the_post_thumbnail('full');
+	?>
 </div>
 
 </div><!-- WRAP -->
@@ -28,7 +30,7 @@ get_header();
 			</div>
 			<?php } ?>
 			<div class="contentinner">
-				<?php if (!is_page()){ ?>
+				<?php if (true==true){ ?>
 					<h2 class="storytitle">
 						<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
 						<?php edit_post_link(__('Edit This'), "<small>", "</small>"); ?>

@@ -1,4 +1,12 @@
 <?php
+
+if (function_exists('add_theme_support')) { 
+// to use wp_nav_menu() in WordPress3.0
+add_theme_support( 'nav-menus' );
+// adds support for the thumbnails / featured images.
+add_theme_support( 'post-thumbnails' );
+};
+
 if ( function_exists('register_sidebar') )
     register_sidebar();	
 
