@@ -6,7 +6,9 @@ get_header();
 ?>
 
 <div id="content-dynamic">
-
+	<?php 
+	if(  has_post_thumbnail() ) the_post_thumbnail('full');
+	?>
 </div>
 
 </div><!-- WRAP -->
