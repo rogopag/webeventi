@@ -1,4 +1,7 @@
 <?php
+/*
+Template name: Contacts
+*/
 get_header();
 ?>
 
@@ -37,7 +40,8 @@ get_header();
 					</div>
 					<?php } ?>
 					<div class="storycontent">
-						<?php the_content(__('(more...)')); ?>
+						<div id="map_canvas"></div>
+						<div id="map-caption"><?php the_content();?></div>
 					</div>
 
 				<!--	<div class="feedback">

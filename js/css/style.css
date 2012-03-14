@@ -1,6 +1,6 @@
 /*/////// IMAGE GALLERY /////////////////////////////////////*/
 #modalContainer{overflow:hidden;}
-#wrapper{height:109px; width:960px; clear:both; overflow:hidden;position:relative;}
+#wrapper{height:123px; width:960px; clear:both; overflow:hidden;position:relative;}
 div.gallery-buttons{z-index:1000;cursor:pointer;width:15px;height:47px;float:left;}
 .gallery{overflow:hidden;}
 .viewerFrame{min-width:10000px;clear:both; padding:0;position:relative;}
@@ -14,5 +14,5 @@ div#frameHoverNav{width:960px;bottom:62%;}
 #imageDetails{margin:8px 0px 0 15px;}
 .lightbox2-alt-layout-data #bottomNavClose, .lightbox2-alt-layout #bottomNavClose{margin-top:30px;}
 div.lightbox-popup{padding-top:15px;}
-#previous-button{position:absolute;top:24px;right:5px;background:url('arrow_right.png') no-repeat left top #fff;}
-#next-button{position:absolute;top:24px;left:0px;background:url('arrow_left.png') no-repeat left top #fff;}
+#previous-button{position:absolute;top:45px;right:0px;background:url('arrow_right.png') no-repeat left top #fff;}
+#next-button{position:absolute;top:45px;left:0px;background:url('arrow_left.png') no-repeat left top #fff;}

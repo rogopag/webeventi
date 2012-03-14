@@ -52,6 +52,10 @@ function enqueue_handler()
 	wp_enqueue_script('scroll', get_bloginfo('template_url').'/js/gallery_scroll.js', array('jquery'), '0.1');
 	wp_enqueue_script('lightbox', get_bloginfo('template_url').'/js/jquery.lightbox-0.5.min.js', array('jquery'), '0.5', false);
 	wp_enqueue_script('scripts', get_bloginfo('template_url').'/js/script.js', array('jquery'), '0.1', false);
+	if( is_page_template('contacts.php') )
+	{
+		wp_enqueue_script('maps', "http://maps.google.com/maps/api/js?sensor=true", array(), '0.1');	
+	}
 	wp_localize_script('scripts', 'Webeventi', array('site_url'=> get_bloginfo('url'), 'template_url' => get_bloginfo('template_url')));
 }
 add_action('wp_print_scripts', 'enqueue_handler');

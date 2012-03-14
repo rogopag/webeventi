@@ -27,22 +27,20 @@
 
 	<body>
 		<div id="page">
-			<div id="container">
+			<div id="container">   
 				<div id="wrap">
 					<div id="header">
-
+						
 						<div class="header_contenitore_left">
 							<h1><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
 							<p><small><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('description'); ?></a></small></p>
 						</div>
-						<ul id="navigation">
-							<?php wp_list_pages('title_li=');
+							<?php 
+							wp_nav_menu( array( 'container' => 'false', 'name' => 'MainMenu', 'menu_class' => 'navigation' ) );
 
 						if (is_active_widget("sidebarssuck_widget_search")) {
 							sidebarssuck_widget_search();
 						}
-						?>	
-					</ul>
-
+						?>
 				</div>
 					<!-- end header -->

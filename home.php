@@ -14,10 +14,9 @@ get_header();
 </div><!-- WRAP -->
 </div><!-- CONTAINER -->
 
-<div id="content-wrapper">
+<div id="content-wrapper" <?php if( is_page_template('home.php') ) echo 'class="more-height"';?>>
 <div id="content">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
 	<div class="post" id="post-<?php the_ID(); ?>">
 		<?php if (!is_page()){ ?>
 			<div class="date">
